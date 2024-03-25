@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "refresh": "npx sequelize-cli db:migrate:undo:all && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
-    "deploy-db": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+    "deploy-db": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "start": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all && node app/app.js"
   },
   "keywords": [],
   "author": "",
