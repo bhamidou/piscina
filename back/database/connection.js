@@ -11,6 +11,12 @@ class Conexion {
                 acquire: 30000,
                 idle: 10000
             },
+            dialectOptions: {
+              ssl: {
+                ca: fs.readFileSync(join(__dirname, 'ca.pem')).toString()
+              }
+            }
+            
         });
     }
 
